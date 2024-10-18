@@ -55,7 +55,7 @@ ROOT_URLCONF = 'django_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,8 +69,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_blog.wsgi.application'
+LOGIN_REDIRECT_URL = 'profile'
 
+LOGOUT_REDIRECT_URL = 'login' 
+LOGIN_URL = 'login'  # Name of the login view
 
+# Logout URL
+LOGOUT_URL = 'logout' 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
