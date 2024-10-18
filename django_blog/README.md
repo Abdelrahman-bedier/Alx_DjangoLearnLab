@@ -1,0 +1,1 @@
+Develop and integrate features in your Django blog project that allow users to create, read, update, and delete (CRUD) blog posts. 
